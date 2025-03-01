@@ -22,13 +22,73 @@ programação orientada a objeto:
 Cada objeto tem seus próprios dados e os metódos que fazem aquisição desses dados. Sem filtro de dados que a programação anterior fazia
 
 ## Vantagens de programar orientado a objeto:
-`**COMER N**ada`
+`COMERNada`
  - C - Confiável
  - O - Oportuno
  - M - Manutenível
  - E - Extensível
  - R - Reutilizável
  - N - Natural
+
+## O que é um objeto?
+Coisa material ou abstrata que pode ser percebida pelos sentidos e descrita por meio de suas características, comportamentos e estado atual.
+
+## Classes
+Vamos pegar uma caneta, uma caneta é um objeto. Porém existem canetas de cores diferentes, tamanhos diferentes e outras características diferentes. Toda caneta tem um molde que classe fica ela.
+
+## Perguntas realizadas para uma classe:
+ - Que coisas eu tenho? (Atributo)
+> Uma caneta pode ter: Modelo, Cor, Ponta, Carga, etc
+ - Que coisas eu faço? (Método)
+> Uma caneta pode fazer: Escrever, Rabiscar, Pintar, Tampar, etc
+ - Como eu estou agora? (Estado)
+> Uma caneta pod estar: Quebrada, tampada, sem tinta, etc
+
+## Algoritmo
+```
+Classe Caneta
+modelo: Caractere
+cor: Caractere
+ponta: Real
+carga: Inteiro
+tampada: Logico
+Método rabiscar()
+	Se (tampada) entao
+		Escreva("Erro!")
+	senao
+		Escreva("Rabisco")
+	Fimse
+FimMetodo
+Metodo tampar()
+	tampada = verdadeiro
+FimMetodo
+FimClasse
+```
+
+## Instanciar
+Quando temos uma Classe e criamos um Objeto a partir dela.
+
+```
+c1 = nova Caneta
+c1.cor = "Azul"
+c1.ponta = 0.5
+c1.rabiscar()`
+
+`c2 = nova Caneta
+c2.cor = "Vermelho"
+...
+```
+
+## Classe
+Define os atributos e métodos comuns que serão compartilhados por um objeto.
+
+## Objeto
+É a instância de uma classe.
+
+## Abstração
+Esconder detalhes de implementação e mostrar apenas o que é essencial. Isso ajuda a criar código mais limpo e modular, focando no "o quê" um objeto faz, e não "como" ele faz.
+
+
 
 
 
