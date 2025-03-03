@@ -78,17 +78,37 @@ c1.rabiscar()`
 c2.cor = "Vermelho"
 ...
 ```
-
 ## Classe
 Define os atributos e métodos comuns que serão compartilhados por um objeto.
-
 ## Objeto
 É a instância de uma classe.
-
 ## Abstração
 Esconder detalhes de implementação e mostrar apenas o que é essencial. Isso ajuda a criar código mais limpo e modular, focando no "o quê" um objeto faz, e não "como" ele faz.
+```
+public class Caneta {
+    String modelo;
+    String cor;
+    float ponta;
+    int carga;
+    boolean tampada;
 
-
+    void tampar () {
+        this.tampada = true;
+    }
+    
+    void destampar() {
+        this.tampada = false;
+    }
+}
+```
+Esse this é uma referencia ao próprio objeto que chamou, então quando criamos um novo objeto e chamamos o método estamos dizendo que este objeto fará isto.
+```
+public static void main(String[] args) {
+        Caneta c1 = new Caneta();
+        
+        c1.tampar() // This = c1
+    }
+```
 
 
 
