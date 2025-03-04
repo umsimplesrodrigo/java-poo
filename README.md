@@ -109,6 +109,30 @@ public static void main(String[] args) {
         c1.tampar() // This = c1
     }
 ```
+## UML - Linguagem de Modelagem Unificada
+### Diagrama de Classes
+Com o diagrama de classes, toda classe é representado pelo um retângulo e nem contém:
+Cabeçalho (Nome da classe), miolo (Atributos) e rodapé (Métodos).
+|Caneta|
+|--------------------------------------------------|
+|modelo <br> cor <br> ponta <br> carga <br> tampada|
+|escrever() <br> rabiscar() <br> pintar() <br> tampar() <br> destampar()|
+
+Modificadores de Visibilidade
+Indica o nível de acesso aos componentes internos de uma classe.
+
+## + Pública
+A classe atual e todas as outras classes tem acesso
+## - Privada
+Somente a classe atual tem acesso
+## # Protegido
+Acesso a classe atual e todas sub-classes 
+> Tendi foi nada mermão
+## 
+|Caneta|
+|--------------------------------------------------|
+|+ modelo <br> + cor <br> - ponta <br> # carga <br> # tampada|
+|+ escrever() <br> + rabiscar() <br> + pintar() <br> - tampar() <br> - destampar()|
 
 
 
