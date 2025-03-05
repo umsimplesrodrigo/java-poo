@@ -133,6 +133,10 @@ Acesso a classe atual e todas sub-classes
 |--------------------------------------------------|
 |+ modelo <br> + cor <br> - ponta <br> # carga <br> # tampada|
 |+ escrever() <br> + rabiscar() <br> + pintar() <br> - tampar() <br> - destampar()|
+## Métodos Especiais
+### Métodos Acessores (Getters)
+### Métodos Modificadores (Setters)
+### Método Construtor (Constuct)
 
 
 
