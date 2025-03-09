@@ -140,7 +140,34 @@ Acesso a classe atual e todas sub-classes
 ## Desafio aula 05
 Nessa aula, o desafio era criar um sistema bancário, onde cada conta teria um número, um titular, um tipo (corrente ou poupança), um saldo e um status (ativa ou desativada). As ações disponíveis seriam abrir conta, sacar, depositar e pagar a mensalidade.
 Para esse sistema simples, criei a classe ContaBanco com seus atributos e métodos. Utilizando a POO, podemos instanciar objetos para representar os clientes do banco. Mas então surgiu uma dúvida: como seria fazer isso sem orientação a objetos?
-Não consegui imaginar de imediato, pois estava com Java na cabeça, e o Java nos obriga a programar utilizando POO. Por isso, pensei no mesmo programa em C. Em C, criaríamos uma struct para armazenar os dados das contas bancárias, e essa estrutura poderia ser manipulada por funções separadas, sem o conceito de classes e objetos. Mas o source ficaria desorganizado e difícil de realizar manutenção. 
+Não consegui imaginar de imediato, pois estava com Java na cabeça, e o Java nos obriga a programar utilizando POO. Por isso, pensei no mesmo programa em C. Em C, criaríamos uma struct para armazenar os dados das contas bancárias, e essa estrutura poderia ser manipulada por funções separadas, sem o conceito de classes e objetos. Mas o source ficaria desorganizado e difícil de realizar manutenção.
+## Pilares da Orientação a Objeto (EHP)
+### Encapsulamento
+Ocultar partes independentes da implementação, permitindo construir partes invisíveis ao mundo exterior.
+> Abstração está dentro de do pilar Encapsulamento
+#### Interface
+Lista de serviços fornecidos por um componente. É o contato com o mundo exterior, que define o que pode ser feito com o objeto dessa classe.
+> Encapsular não é obrigatório, mas é uma boa prática para produzir Classes mais eficientes
+### Vantagens
+- Tornar mudanças invisíveis
+- Facilitar a reutilização de código
+- Reduzir efeitos colaterais
+### Interface UML
+|Interface <br> Controlador|
+|------------------------------|
+|+ ligar() <br> + desligar() <br> + abrirMenu() <br> + maisVolume() <br> + menosVolume() <br> + ligarMudo() <br> + desligarMudo() <br> + desligar() <br> + play() <br> + pause()|
+> Os serviços de uma interface são chamados de métodos abstratos
+##
+|Controle Remoto|
+|---------------|
+|- volume <br> - ligado <br> - tocando|
+|+ ligar() <br> + desligar() <br> + abrirMenu() <br> + maisVolume() <br> + menosVolume() <br> + ligarMudo() <br> + desligarMudo() <br> + desligar() <br> + play() <br> + pause() <br> - getters e setters|
+## 
+Ao criar uma classe e implementar uma interface, copiamos a assinatura dos métodos definidos na interface e sobrescrevemos (@Override) esses métodos na classe, implementando a lógica dentro deles.
+A interface, por si só, não implementa comportamento, apenas define um contrato que a classe deve seguir. Dessa forma, ela fornece serviços para o mundo exterior, garantindo que a classe siga um determinado padrão. Além disso, ajuda a encapsular a implementação, permitindo que outras partes do código dependam apenas da interface, e não dos detalhes internos da classe.
+### Herança
+### Poliforfismo
+
 
 
 
