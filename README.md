@@ -137,7 +137,10 @@ Acesso a classe atual e todas sub-classes
 ### Métodos Acessores (Getters)
 ### Métodos Modificadores (Setters)
 ### Método Construtor (Constuct)
-
+## Desafio aula 05
+Nessa aula, o desafio era criar um sistema bancário, onde cada conta teria um número, um titular, um tipo (corrente ou poupança), um saldo e um status (ativa ou desativada). As ações disponíveis seriam abrir conta, sacar, depositar e pagar a mensalidade.
+Para esse sistema simples, criei a classe ContaBanco com seus atributos e métodos. Utilizando a POO, podemos instanciar objetos para representar os clientes do banco. Mas então surgiu uma dúvida: como seria fazer isso sem orientação a objetos?
+Não consegui imaginar de imediato, pois estava com Java na cabeça, e o Java nos obriga a programar utilizando POO. Por isso, pensei no mesmo programa em C. Em C, criaríamos uma struct para armazenar os dados das contas bancárias, e essa estrutura poderia ser manipulada por funções separadas, sem o conceito de classes e objetos. Mas o source ficaria desorganizado e difícil de realizar manutenção.
 
 
 
