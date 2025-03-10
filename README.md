@@ -188,6 +188,30 @@ Refere-se à quantidade de instâncias que podem se relacionar em cada extremida
 A relação de agregação entre classes é similar ao relacionamento entre entidades no DER de um banco de dados. No DER, as entidades estão relacionadas entre si por meio de relacionamentos, como "um para muitos" ou "muitos para muitos".
 A principal diferença é que, no relacionamento entre classes, além de dados, também existem funções (métodos) que representam comportamentos, enquanto no DER, o foco está em dados e seus relacionamentos, sem a preocupação com comportamentos ou funções.
 ### Herança
+A herança é um mecanismo da orientação a objetos que permite que uma nova classe seja criada com base em uma classe existente. Esse conceito promove o reuso de código, permitindo que a nova classe (subclasse) herde tanto os atributos quanto os métodos da classe base (superclasse).
+#### Estrutura da Herança
+- Superclasse raiz: A classe que está no topo da hierarquia e serve como base para outras.
+- Folhas: Subclasses que não possuem subclasses derivadas.
+- Descendentes: Todas as subclasses derivadas de uma determinada superclasse.
+- Ancestral: Qualquer superclasse em relação a suas subclasses.
+- Especialização: Processo de percorrer a árvore de herança de cima para baixo, adicionando funcionalidades específicas.
+- Generalização: Processo inverso, de baixo para cima, agrupando características comuns em uma superclasse.
+#### Tipos de Herança
+- Herança de Implementação: A subclasse herda atributos e métodos da superclasse, podendo reutilizar código e modificar comportamentos através da sobrescrita.
+- Herança de Diferença: A subclasse redefine completamente comportamentos, sem necessariamente reaproveitar a implementação da superclasse.
+### Classes e Métodos Especiais
+#### Classe Abstrata:
+- Não pode ser instanciada diretamente, servindo apenas como base para outras classes.
+- Pode conter métodos concretos e abstratos (sem implementação).
+#### Método Abstrato:
+- Declarado na classe abstrata, mas sem implementação.
+- As subclasses são obrigadas a sobrescrevê-lo.
+#### Classe Final:
+- Não pode ser herdada por nenhuma outra classe.
+- Sempre representa uma folha na árvore de herança.
+#### Método Final:
+- Não pode ser sobrescrito pelas subclasses.
+- A implementação na superclasse é obrigatoriamente herdada e mantida nas subclasses.
 ### Poliforfismo
 
 
