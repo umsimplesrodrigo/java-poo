@@ -165,6 +165,28 @@ Lista de serviços fornecidos por um componente. É o contato com o mundo exteri
 ## 
 Ao criar uma classe e implementar uma interface, copiamos a assinatura dos métodos definidos na interface e sobrescrevemos (@Override) esses métodos na classe, implementando a lógica dentro deles.
 A interface, por si só, não implementa comportamento, apenas define um contrato que a classe deve seguir. Dessa forma, ela fornece serviços para o mundo exterior, garantindo que a classe siga um determinado padrão. Além disso, ajuda a encapsular a implementação, permitindo que outras partes do código dependam apenas da interface, e não dos detalhes internos da classe.
+## Relacionamento entre Classes
+### Agregação
+Representa o tipo de relacionamento "tem um" entre duas classes. Em uma agregação, uma classe contém outra, mas a classe contida pode existir independentemente. É um tipo de relacionamento fraco, onde a classe agregadora não possui o ciclo de vida da classe agregada.
+Exemplo: Uma Luta pode ter vários Lutadores, e um Lutador pode participar de várias Lutas. Esse tipo de relação é bidirecional, o que significa que cada lado da relação pode acessar o outro.
+> Meu professor citou esses conceitos na aula sobre **Composição** e **Injeção de Dependência**. No início, as explicações não ficaram muito claras para mim, mas agora comecei a compreender melhor. No exemplo que desenvolvi nas aulas 7 e 8, os Lutadores podem existir independentemente da existência de uma Luta. Isso significa que a Luta apenas faz referência aos lutadores, sem controlar o ciclo de vida deles. Esse tipo de relacionamento reduz a interdependência entre as classes, o que se assemelha a um princípio da Injeção de Dependência, pois a Luta não precisa criar os lutadores, apenas receber instâncias prontas.
+### Tipo Abstrato de Dados (TAD)
+Refere-se a um modelo ou estrutura de dados que descreve operações e comportamentos, mas sem especificar a implementação. Ou seja, um TAD define o que uma estrutura de dados pode fazer, mas não como isso é feito.
+> No meu caso, quando criei os atributos desafiante e desafiado do tipo Lutador (outra classe), fiz com que a classe Luta manipulasse objetos do tipo Lutador sem precisar saber como a classe Lutador funciona internamente. Dessa forma, a classe Lutador pode ser vista como um tipo abstrato de dado do ponto de vista da classe Luta, pois a luta apenas interage com os lutadores sem definir sua implementação.
+## 
+[Lutador](Aula07/src/aula07/Lutador.java) <br>
+[Luta](Aula07/src/aula07/Luta.java)
+```
+public class Luta {
+    private Lutador desafiado;
+    private Lutador desafiante;
+```
+### Multiplicidade
+Refere-se à quantidade de instâncias que podem se relacionar em cada extremidade de uma associação entre classes. Pode ser expressa de forma como "1 para muitos", "muitos para muitos", etc.
+> Exemplo: Em um relacionamento de Luta e Lutador, a multiplicidade pode ser de "1 para muitos" (uma luta tem muitos lutadores) e "muitos para muitos" (um lutador pode lutar várias lutas).
+### Comparação com o DER (Diagrama Entidade-Relacionamento)
+A relação de agregação entre classes é similar ao relacionamento entre entidades no DER de um banco de dados. No DER, as entidades estão relacionadas entre si por meio de relacionamentos, como "um para muitos" ou "muitos para muitos".
+A principal diferença é que, no relacionamento entre classes, além de dados, também existem funções (métodos) que representam comportamentos, enquanto no DER, o foco está em dados e seus relacionamentos, sem a preocupação com comportamentos ou funções.
 ### Herança
 ### Poliforfismo
 
