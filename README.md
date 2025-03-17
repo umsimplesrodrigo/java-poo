@@ -199,19 +199,24 @@ A herança é um mecanismo da orientação a objetos que permite que uma nova cl
 #### Tipos de Herança
 - Herança de Implementação: A subclasse herda atributos e métodos da superclasse, podendo reutilizar código e modificar comportamentos através da sobrescrita.
 - Herança de Diferença: A subclasse redefine completamente comportamentos, sem necessariamente reaproveitar a implementação da superclasse.
+> No exemplo [Pessoa](ProjetoPessoa02), `Visitante` herda tudo de `Pessoa`, mas sem nenhum alteração. Logo, é uma Herança de Implementação (Herança pobre). <br>
+> Já `Aluno` herda tudo de `Pessoa` mas tem o método `pagarMensalidade` que `Pessoa` não tem. Logo, uma Herança de Diferença`.
 ### Classes e Métodos Especiais
 #### Classe Abstrata:
 - Não pode ser instanciada diretamente, servindo apenas como base para outras classes.
 - Pode conter métodos concretos e abstratos (sem implementação).
+> No exemplo [Pessoa](ProjetoPessoa02), colocamos `abstract` na classe `Pessoa`, logo não tem como criar objetos dele diretamente.
 #### Método Abstrato:
 - Declarado na classe abstrata, mas sem implementação.
 - As subclasses são obrigadas a sobrescrevê-lo.
 #### Classe Final:
 - Não pode ser herdada por nenhuma outra classe.
 - Sempre representa uma folha na árvore de herança.
+> No exemplo [Pessoa](ProjetoPessoa02), se colocassémos `public final class Aluno`, a subclasse `Bolsista` não poderia ser extendida de `Aluno`.
 #### Método Final:
 - Não pode ser sobrescrito pelas subclasses.
 - A implementação na superclasse é obrigatoriamente herdada e mantida nas subclasses.
+> No exemplo [Pessoa](ProjetoPessoa02), se tivéssimos colocado o método `pagarMens` como final a subclasse `Bolsista` não conseguiria subscrever o método.
 ### Poliforfismo
 
 
