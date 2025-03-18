@@ -218,7 +218,13 @@ A herança é um mecanismo da orientação a objetos que permite que uma nova cl
 - A implementação na superclasse é obrigatoriamente herdada e mantida nas subclasses.
 > No exemplo [Pessoa](ProjetoPessoa02), se tivéssimos colocado o método `pagarMens` como final a subclasse `Bolsista` não conseguiria subscrever o método.
 ### Poliforfismo
-
+- Permite que um mesmo nome represente vários comportamentos diferentes.
+#### Assinatura do método
+- Consiste na quantidade e os tipos de parâmetros.
+#### Tipos de Polimorfismo
+##### Sobreposição
+- Acontece quando substituímos um método de uma superclasse na sua subclasse, usando a mesma assinatura.
+##### Sobrecarga
 
 
 
