@@ -223,8 +223,10 @@ A herança é um mecanismo da orientação a objetos que permite que uma nova cl
 - Consiste na quantidade e os tipos de parâmetros.
 #### Tipos de Polimorfismo
 ##### Sobreposição
+> Assinaturas iguais em diferentes classes
 - Acontece quando substituímos um método de uma superclasse na sua subclasse, usando a mesma assinatura.
 ##### Sobrecarga
+> Assinaturas diferentes na mesma classe
 
 
 
