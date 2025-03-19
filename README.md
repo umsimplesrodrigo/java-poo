@@ -227,7 +227,14 @@ A herança é um mecanismo da orientação a objetos que permite que uma nova cl
 - Acontece quando substituímos um método de uma superclasse na sua subclasse, usando a mesma assinatura.
 ##### Sobrecarga
 > Assinaturas diferentes na mesma classe
+## SOLID
+### S - Single Responsibility Principle (Princípio da Responsabilidade Única)
+### O - Open/Closed Principle (Princípio do Aberto/Fechado)
+### L - Liskov Substitution Principle (Princípio da Substituição de Liskov)
+### I - Interface Segregation Principle (Princípio da Segregação de Interface)
+### D - Dependency Inversion Principle (Princípio da Inversão de Dependência)
 
+Godclass
 
 
 
